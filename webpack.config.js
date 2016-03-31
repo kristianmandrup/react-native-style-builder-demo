@@ -43,7 +43,8 @@
           loader: 'babel',
           query: {
             cacheDirectory: true,
-            presets: ['es2015', 'stage-1', 'react']
+            presets: ['es2015', 'stage-1', 'react'],
+            plugins: 'babel-plugin-transform-decorators-legacy'
           }
         }
       ]

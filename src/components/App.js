@@ -3,6 +3,7 @@
  * https://github.com/jhabdas/react-native-webpack-starter-kit
  */
 import React, { Component, PropTypes } from 'react-native'
+import MyComponent from './MyComponent'
 
 const {
   Platform,
@@ -15,6 +16,7 @@ const App = ({
   instructions,
 }) =>
   <View style={styles.container}>
+    <MyComponent />
     <Text style={styles.welcome}>
       Welcome to React Native!
     </Text>
