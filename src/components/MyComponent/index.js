@@ -1,10 +1,19 @@
-import { Styles } from './styles.js'
-import { statefulStyling, updateStyles } from './styles.js'
-import { injectProps } from 'relpers'
+import {
+  statefulStyling,
+  updateStyles
+} from 'reactive-style-builder'
+
+import {
+  injectProps
+} from 'relpers'
+
 import React, {
   Component,
   View,
 } from 'react-native'
+
+import { Styles } from './styles.js'
+
 
 // props are global (or higher level state)
 // state is local state (ie. local styling)
@@ -13,11 +22,19 @@ import React, {
 
 // See ES7 Decorators + React
 // https://medium.com/@goncalvesjoao/react-es7-decorators-how-to-inject-props-to-your-render-method-27a0a7973106#.d9dir76zc
-@statefulStyling(Styles, 'native')
+@statefulStyling('native', Styles)
 export default class MyComponent extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      active: true
+    }
+  }
 
-  // just before component is rendered after a state update,
-  // we re-compute styles based on state
+  @updateStyles
+  componentWillMount() {
+  }
+
   @updateStyles
   componentWillUpdate() {
   }
