@@ -12,17 +12,11 @@ import React, {
   View,
 } from 'react-native'
 
-import { Styles } from './styles.js'
+import styleBuilder from './styles.js'
 
+console.log('styleBuilder', styleBuilder);
 
-// props are global (or higher level state)
-// state is local state (ie. local styling)
-// to calculate local style state, use global and local state
-// to compute new style object (one level deep only!)
-
-// See ES7 Decorators + React
-// https://medium.com/@goncalvesjoao/react-es7-decorators-how-to-inject-props-to-your-render-method-27a0a7973106#.d9dir76zc
-@statefulStyling('native', Styles)
+@statefulStyling('native', styleBuilder)
 export default class MyComponent extends Component {
   constructor(props) {
     super(props)
