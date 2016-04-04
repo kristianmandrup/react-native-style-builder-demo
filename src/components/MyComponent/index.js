@@ -1,10 +1,10 @@
 import {
   statefulStyling,
-  updateStyles
+  updateStyles,
 } from 'reactive-style-builder'
 
 import {
-  injectProps
+  injectProps,
 } from 'relpers'
 
 import React, {
@@ -27,7 +27,7 @@ export default class MyComponent extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      active: true
+      active: true,
     }
   }
 
