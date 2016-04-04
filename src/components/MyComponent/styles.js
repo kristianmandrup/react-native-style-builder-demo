@@ -1,11 +1,17 @@
 import { StyleBuilder } from 'reactive-style-builder'
 import { StyleSheet } from 'react-native'
 
-export const styles = {
+const styles = {
   title: (state) => {
     return {
       color: state.todo.completed ? 'red' : 'green',
     }
+  },
+  container: {
+    color: 'blue',
+  },
+  header: {
+    color: 'purple',
   },
 }
 

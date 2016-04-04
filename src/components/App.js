@@ -10,13 +10,17 @@ const {
   View,
 } = React
 
-const App = ({styles}) =>
-  <View style={styles.container}>
-    <MyComponent />
-    <Text style={styles.welcome}>
-      Welcome to React Native!
-    </Text>
-  </View>
+const App = ({styles = {}}) => {
+  console.log('styles', styles)
+  return (
+    <View style={styles.container}>
+      <MyComponent />
+      <Text style={styles.title}>
+        Welcome to React Native!
+      </Text>
+    </View>
+  )
+}
 
 App.propTypes = {
   instructions: PropTypes.string,

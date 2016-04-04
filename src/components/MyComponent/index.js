@@ -44,7 +44,7 @@ export default class MyComponent extends Component {
   render({ styles }) {
     return (
       <View styles={styles.header}>
-        <View styles={styles.titles} />
+        <View styles={styles.title} />
       </View>
     )
   }

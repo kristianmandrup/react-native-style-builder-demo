@@ -14,6 +14,7 @@
     "semi": [2, "never"],
     "comma-dangle": [1, "always-multiline"],
     "constructor-super": 2,
+    "no-console": 0,
     "no-confusing-arrow": 2,
     "no-constant-condition": 2,
     "no-class-assign": 2,
