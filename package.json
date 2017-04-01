@@ -32,25 +32,25 @@
   },
   "dependencies": {
     "babel-runtime": "^6.6.0",
-    "core-decorators": "^0.12.0",
-    "react": "^0.14.5",
-    "react-native": "^0.22.2",
+    "core-decorators": "^0.15.0",
+    "react": "^15.4.2",
+    "react-native": "^0.42.3",
     "reactive-style-builder": "^0.1.0",
     "relpers": "^1.3.3"
   },
   "devDependencies": {
     "babel-core": "^6.3.17",
-    "babel-eslint": "^6.0.0",
+    "babel-eslint": "^7.2.1",
     "babel-loader": "^6.2.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-1": "^6.3.13",
-    "eslint": "~2.5.1",
+    "eslint": "~3.19.0",
     "eslint-loader": "^1.1.1",
-    "eslint-plugin-react": "^4.0.0",
-    "react-native-webpack-server": "^0.8.3",
-    "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
+    "eslint-plugin-react": "^6.10.3",
+    "react-native-webpack-server": "^0.9.3",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2"
   }
 }
